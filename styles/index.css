@@ -1,0 +1,20 @@
+header {background-image: url("../images/bg-header.png"); height: 300px; border-bottom: 5px ridge #9D8FF7;}
+	header > h1 {font-size: 45px; text-align: center;}
+	header > img { border: 5px groove #1C6EA4; height: 110px; width: 110px; margin-top: 15px; margin-bottom: 15px; }
+	header > #liens {}
+		header > #liens > .media {}
+
+#competences {background-image: url("../images/bg-page.png"); height: 100px; border-bottom: 5px ridge #9D8FF7;}
+	#competences > h2 {font-size: 30px; text-align: center;}
+	#competences > p {}
+	#competences > #liens_comp {}
+
+#projets {background-image: url("../images/bg-page.png"); height: 300px; border-bottom: 5px ridge #9D8FF7;}
+	#projets > h2 {font-size: 30px; text-align: center;}
+	#projets > .bloc {}
+		#projets > .bloc > h3 {}
+		#projets > .bloc > img {}
+
+footer {}
+	footer > p {}
+	footer > .media2 {}	
