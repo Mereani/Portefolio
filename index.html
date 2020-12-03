@@ -4,44 +4,51 @@
 		<title>Mereani Baratte</title>
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<link rel="stylesheet" type="text/css" href="styles/index.css">
+		<link rel="icon" type="image/png" href="images/media/github.svg" /> <!-- Pouvoir mettre une icon dans l'onglet-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="scripts/index.js"></script>
 	</head>
 	<body>
 		<header>
 			<h1>Mereani Baratte</h1>
-			<img src="">
+			<img src="../photogrp/profil.jpg">
 			<div id="liens">
-				<a class="media" href="#"><img src=""></a>
-				<a class="media" href="#"><img src=""></a>
-				<a class="media" href="#"><img src=""></a>
+				<a class="media" href="https://mereani.github.io/"><img src="images/media/cv.svg"></a>
+				<a class="media" href="https://github.com/Mereani"><img src="images/media/github.svg"></a>
+				<a class="media" href="https://www.linkedin.com/in/mereani-baratte-2923291b3/"><img src="images/media/linkedin.svg"></a>
 			</div>
-			<p></p>
+			<!-- <p>Apprenante chez Simplon.co depuis juillet 2020</p> -->
 		</header>
 		<section id="competences">
 			<h2>Mes Competences</h2>
-			<p></p>
+			<p id="text">Survolez les images</p>
 			<div id="liens_comp">
-				<img src="">
-				<img src="">
-				<img src="">
-				<img src="">
+				<img onmouseover="on1()" onmouseleave="out()" src="images/competences/html.svg">
+				<img onmouseover="on2()" onmouseleave="out()" src="images/competences/css.svg">
+				<img onmouseover="on3()" onmouseleave="out()" src="images/competences/javascript.svg">
+				<img onmouseover="on4()" onmouseleave="out()" src="images/competences/nodejs.svg">
 			</div>
 		</section>
 		<section id="projets">
 			<h2>Mes Projets</h2>
 			<div class="bloc">
-				<h3></h3>
-				<img src="">
+					<!-- Projet1_countdown -->
+				<h3>Projet Countdown</h3>
+				<img id="countdown" src="images/down.svg">
+				<p id="hello">Hello !</p>
 			</div>
 			<div class="bloc">
-				<h3></h3>
-				<img src="">
-			</div>
+				<!-- Projet2_blog?_-->
+				<h3>Projet Blog</h3>
+				<img id="blog" src="images/down.svg">
+				<p id="here">Je suis là !</p>
+			 </div>
 		</section>
 		<footer>
-			<p></p>
-			<a class="media2" href="#"><img src=""></a>
-			<a href="#"><img src=""></a>
-			<a href="#"><img src=""></a>
+			<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. I</p> -->
+			<a class="media2" href="https://mereani.github.io/"><img src="images/media/cv.svg"></a>
+			<a class="media2" href="https://github.com/Mereani"><img src="images/media/github.svg"></a>
+			<a class="media2" href="https://www.linkedin.com/in/mereani-baratte-2923291b3/"><img src="images/media/linkedin.svg"></a>
 		</footer>
 	</body>
 </html>
