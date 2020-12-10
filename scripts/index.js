@@ -2,12 +2,12 @@
 
 $(document).ready(function(){
     $("#countdown").click(function(){
-    $("#hello").toggle(500);
+    $("#firstprojet").toggle(500);
   });
 });
 $(document).ready(function(){
     $("#blog").click(function(){
-    $("#here").toggle(500);
+    $("#projetblog").toggle(500);
   });
 });
 
