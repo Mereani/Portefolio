@@ -1,27 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-header {display: block; background-image: url("../images/bg-header.png"); height: 300px; border-bottom: 5px ridge #9D8FF7;}
+header {display: block; background-image: url("../images/bg-header.png"); height: 70%; border-bottom: 5px ridge #9D8FF7; width: 100%}
 	header > h1 {font-size: 45px; text-align: center; font-family: 'Major Mono Display', monospace;}
-	header > img {display: block; margin: auto; border: 5px groove #1C6EA4; height: 110px; width: 110px; margin-top: 15px; margin-bottom: 15px;}
-	header > #liens {/*display: inline-block;*/ display: flex; justify-content: space-evenly;} /*Div pour les icones*/
-		header > #liens > .media {display: inline-block;}
-		header > #liens > .media > img { height: 50px; margin-top: 15px; margin-bottom: 15px;}
+	header > img {display: block; margin: auto; border: 5px groove #9D8FF7; height: 50%; margin-top: 15px; margin-bottom: 15px;}
+	header > #liens { width: 100%; text-align: center; height: 35%;}
+		header > #liens > .media {display: inline-block; width: 30%; }
+			header > #liens > .media > img { margin-top: 5%; height: 70px; }
 		header > p {font-size: 20px; text-align: center;}
 
-#competences {display: block; background-image: url("../images/bg-page.png"); height: 100px; border-bottom: 5px ridge #9D8FF7; height: auto;}
+#competences {display: block; background-image: url("../images/bg-page.png"); border-bottom: 5px ridge #9D8FF7; height: auto;}
 	#competences > h2 {font-size: 30px; text-align: center; margin-top: 15px; margin-bottom: 15px;}
 	#competences > p {font-size: 15px; text-align: center; margin-bottom: 15px;}
 	#competences > #liens_comp {display: flex; justify-content: space-evenly;}
-		#competences > #liens_comp > img {height: 60px; margin-top: 15px; margin-bottom: 15px;} /* faire en sorte que la div s'adapte au contenu*/
+		#competences > #liens_comp > img {height: 60px; margin-top: 15px; margin-bottom: 15px;}
+/*height: auto permet à ce que la div d'adapte au contenu*/
+#projets { display: block; background-image: url("../images/bg-page.png"); height: auto; border-bottom: 5px ridge #9D8FF7;}
+	#projets > .titreProjets > h2 {font-size: 30px; text-align: center; margin-top: 15px; margin-bottom: 15px;}
+	#projets > .containerProjets > .bloc {display: block; border: 5px ridge #9D8FF7;}
+		#projets > .containerProjets >.bloc > h3 {font-size: 30px; text-align: center; margin-top: 15px; margin-bottom: 15px;}
+		#projets > .containerProjets >.bloc > img {width: 10px; height: 10px; display: block; margin: auto; margin-top: 15px; margin-bottom: 15px;}
+		#projets > .containerProjets >.bloc > p {font-size: 20px; text-align: center; margin-top: 15px; margin-bottom: 15px; display: none;}
 
-#projets { display: block; background-image: url("../images/bg-page.png"); height: 300px; border-bottom: 5px ridge #9D8FF7;}
-	#projets > h2 {font-size: 30px; text-align: center; margin-top: 15px; margin-bottom: 15px;}
-	#projets > .bloc {display: block; border: 5px ridge #9D8FF7;}
-		#projets > .bloc > h3 {font-size: 30px; text-align: center; margin-top: 15px; margin-bottom: 15px;}
-		#projets > .bloc > img {width: 10px; height: 10px; display: block; margin: auto; margin-top: 15px; margin-bottom: 15px;}
-		#projets > .bloc > p {font-size: 20px; text-align: center; margin-top: 15px; margin-bottom: 15px; display: none;}
-
-footer { background-image: url("../images/bg-header.png"); display: flex; justify-content: space-evenly;}
+footer { background-image: url("../images/bg-header.png"); display: flex; justify-content: space-evenly; height: auto;}
 	footer > p {font-size: 30px; text-align: center;}
 	footer > .media2 {display: inline-block; }
-		footer > .media2 > img { height: 50px; margin-top: 15px; margin-bottom: 15px;}
+		footer > .media2 > img { margin: auto; height: 30px; margin-top: 15px; margin-bottom: 15px;}
 
+
+/*Responsive - Telephone*/
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 500px) {
+
+	header  {height: auto;}
+		header > h1 {font-size: 100px; margin: 3%;}
+			header > img {height: 500px;}
+				header > #liens {}
+					header > #liens > .media { display: block;  margin: 100px; width: auto; text-align: center;}
+						header > #liens > .media > img { height: 200px; }
+					
+	#competences > #liens_comp {display: flex; flex-direction: column;}
+		#competences > h2 {font-size: 70px;}
+			#competences > p {font-size: 50px;}			
+				#competences > #liens_comp > img {height: 200px; margin-top: 15px; margin-bottom: 15px;}
+
+	#projets { display: flex; flex-direction: column;}
+		#projets > .containerProjets { display: flex; justify-content: center;}
+			#projets > .containerProjets >.bloc { width: 50%;}
+				#projets >  .titreProjets >h2 {font-size: 70px;}
+				#projets > .containerProjets >.bloc > img {width: 50px; height: 50px;}
+						#projets > .containerProjets >.bloc > h3 {font-size: 50px;}
+							#projets > .containerProjets >.bloc > p {font-size: 40px;}
+							#projets > .containerProjets >.bloc > .lien {font-size: 30px; text-align: center; margin-top: 15px; margin-bottom: 15px; display: none;}
+
+	footer > .media2 > img { margin: auto; height: 80px;  margin-top: 20px; margin-bottom: 20px;}
+		}
+
+/*Responsive - Tablette*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	
+	}
